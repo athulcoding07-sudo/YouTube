@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube</title>
+    <link href="data:image/png;base64,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" rel="icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="youtubeclone.css">
+<link rel="stylesheet" href="style.css">
+
+    </head>
+
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg nav-main fixed-top">
+                <div class="container-fluid px-2">
+                    <!-- Left Section -->
+                    <div class="d-flex align-items-center">
+                        <button class="list-btn p-2 me-2 d-none d-sm-block d-md-block d-xl-block d-xxl-block"
+                            data-bs-toggle="collapse" data-bs-target="#sidebar" type="button">
+                            <i class="bi bi-list list-icon"></i>
+                        </button>
+                        <a href="#" class="me-2">
+                            <img class="img-fluid main-logo" src="images/main-logo.jpg"Logo>
+                        </a>
+                    </div>
+        
+                    <!-- Center Section Search bar -->
+                    <div class="flex-grow-1 d-none d-md-flex justify-content-center">
+                        <div class="input-group search-bar">
+                            <input type="search" class="form-control rounded-pill border-end-0 input-search"
+                                placeholder="Search">
+                            <button class="btn btn-outline-secondary ms-n3 input-btn">
+                                <img  style="width: 30px;height: 30px;" src="images/search.png" alt="">
+                            </button>
+        
+        
+                            <button class="mic-btn rounded-pill d-none d-lg-inline" type="button">
+                                <img style="width: 20px;height: 20p;" src="images/images (1).png" alt="">
+                            </button>
+        
+                        </div>
+                    </div>
+        
+        
+                    <!-- Right Section -->
+                    <div class="d-flex justify-content-center">
+                        <button class="create-plus rounded-pill d-none d-md-inline">
+                            <i class="bi bi-plus"></i> Create
+                        </button>
+        
+                        <button class="rounded-pill bell-btn">
+                            <img  style="width: 20px;height: 20px;" src="images/images.png" alt="">
+                        </button>
+        
+                        <img class="profile-btn rounded-pill" src="images/460508081_507565498922399_825367262868311490_n (1).jpg" alt="Profile">
+                    </div>
+                </div>
+            </nav>
+        
+        
+        </header>
+        <section class="d-flex" >
+                    <aside class="sidebar  collapse " style="width: 20%;" id="sidebar">
+                        <nav class="nav flex-column">
+                            <a class="nav-link active text-white" href="#"><i class="bi bi-house-door-fill ps-2"></i><span
+                                    class="label ps-2">Home</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-file-play-fill ps-2"></i><span
+                                    class="label ps-2">Shorts</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-play-btn-fill ps-2"></i><span
+                                    class="label ps-2">Subscriptions</span></a>
+                            <hr class="text-white my-2">
+                            <a class="nav-link fw-bold	text-white" href="#"><span class="label">You &gt;</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-clock-history ps-2"></i><span
+                                    class="label ps-2">History</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-clock-history ps-2"></i><span
+                                    class="label ps-2">Playlists</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-play-btn-fill ps-2"></i><span class="label ps-2">Your
+                                    videos</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-clock ps-2"></i><span class="label ps-2">Watch
+                                    Later</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-hand-thumbs-up ps-2"></i><span class="label ps-2">Liked
+                                    videos</span></a>
+                            <a class="nav-link text-white" href="#"><i class="bi bi-download ps-2"></i><span
+                                    class="label ps-2">Downloads</span></a>
+                            <hr class="text-white my-2">
+                            <a class="nav-link fw-bold text-white" href="#"><span class="label ps-2">Subscriptions</span></a>
+                            <a class="nav-link text-white" href="#"><span class="label ps-2">Brototype</span></a>
+                            <a class="nav-link text-white" href="#"><span class="label ps-2">Kode Malayalam</span></a>
+                    
+                        </nav>
+                    </aside>
+                            <aside class="close-sidebar flex-column position-fixed d-none d-md-block d-xl-block d-xxl-block" style="width: 8%;">
+                                <div class="card1 my-4">
+                                    <a class="nav-link active" href="#"><i class="bi bi-house-door-fill ps-4 ms-2"></i></a>
+                                    <span class="label ps-3  fs-6">Home</span>
+                                </div>
+                            
+                                <div class="card1 my-4">
+                                    <a class="nav-link active" href="#"><i class="bi bi-file-play-fill ps-4 ms-2"></i></a>
+                                    <span class="label ps-3 fs-6">Shorts</span>
+                                </div>
+                            
+                            
+                                <div class="card1 my-4">
+                                    <a class="nav-link active" href="#"><i class="bi bi-play-btn-fill ps-4 ms-2"></i></a>
+                                    <span class="label ps-3 fs-6">Subscription</span>
+                                </div>
+                            
+                                <div class="card1 my-4">
+                                    <a class="nav-link active" href="#"><i class="bi bi-person-circle ps-4 ms-2"></i></a>
+                                    <span class="label ps-4 fs-6">You</span>
+                                </div>
+                            
+                                <div class="card1 my-4">
+                                    <a class="nav-link active" href="#"><i class="bi bi-download ps-4 ms-2"></i></a>
+                                    <span class="label ps-3 fs-6">Home</span>
+                                </div>
+                            </aside>
+                             
+
+
+                            <!-- main contents like thumbnils,videos,images -->
+
+                            <main class="container d-flex" style="width: 80%;">
+                                <div class="row"style="margin-top: 129px;">
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="images/thumbnils/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3" alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/SxtxAT2eoNsERZyC-2Q9t3YhFC0IPhlaYOFA8rciY3BkhfoR9VPAx5n8A8L6QNG3vjFXSsB7rQ=s48-c-k-c0x00ffffff-no-rj" class="rounded-circle" width="36" height="36"
+                                                                        alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/U5HvuKEjH6g/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">5:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.googleusercontent.com/zm2qB-CPQ12Tg6xAACoO4malZ8BXuA4-ZwV4GpBeZQEVVNxBXz30caikL1IBMaTy3TTEHWTs-Q=s160-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How to Spend Your Time Wisely for Success</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Thrivefy</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 7 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                                                                        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                                                                            <div class="card youtube-card border-0 bg-transparent">
+                                                                                                                <div class="position-relative">
+                                                                                                                    <img src="https://img.youtube.com/vi/pX2zvfD6GCY/maxresdefault.jpg" loading="lazy"
+                                                                                                                        class="card-img-top rounded-3" alt="Video thumbnail">
+                                                                                                                    <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                                                                        style="font-size: 0.8rem;">5:45</span>
+                                                                                                                </div>
+                                                                                                                <div class="card-body p-2 d-flex">
+                                                                                                                    <div class="flex-shrink-0 me-2">
+                                                                                                                        <img src="https://yt3.ggpht.com/ytc/AIdro_lflULSxMfVTiLG4LxUB2WAhr12sLmEsrv24rkF43cIUmE=s48-c-k-c0x00ffffff-no-rj"
+                                                                                                                            class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                                                                    </div>
+                                                                                                                    <div>
+                                                                                                                        <h6 class="card-title text-white mb-1"
+                                                                                                                            style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                                                                            Zuckerberg and Senator Hawley clash in fiery child safety hearing</h6>
+                                                                                                                        <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">The Indipendent</p>
+                                                                                                                        <p class="card-text text-secondary" style="font-size: 0.8rem;">611K views · 8 hours ago
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/z7do1hhb6fE/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/ytc/AIdro_l3_1jQNpiVw6DJNaBBohIfipBAGw2kihVhTKG622wVQQI=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/Pqb19IaWwOE/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/oZkVmhJfuJL2z_I3atJ2K2rsiLz8Cv87PLc5sR3TXTbnH8-Q1NEdbdaZnpWPppWjyIOnzd3h=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        I asked the Google CEO if AI is taking our jobs</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/z1UteKjglG8/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/0DoHcBlFYgSBlLmcPtxU1zJbhvDExjxvWpnjX-8ZWsuEcG5DfRd-0uHEVIm5EYicALj8NE8ubM8=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/TPWmrkGAjm4/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/JkMaJlcb__QPFVvhk7urBKlULQzu6D1O7fkOwvyhvphswp-Fxy0tmAxtNJWKN1P9GL3g-IUr=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        You Are Study Wrong</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/PR__eFQsnhg/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/j1Lgi-atXRNkVcfS16ANwqlOoNoi77aW2JtAe_FlqVxDyzR8AyHWJTHYRg_3R1uIpw6Til0SdQ=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Silicon Vaally Girl</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/RGaW82k4dK4/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/DT7O_xioFBZllihmSaKnI_CSVIZlIuAURRTLwFGQNZb5910Xpx_CtsjeN6ZmemSf_VSH2camnw=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/Z4pCqK-V_Wo/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/40SE9hF9oDMoGjoKDdQEG8e6HJML5c_fVP40Vfm2hMrfkvqqMYrVCyPoGXlMFFNE89rN10EQJQ=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/I5kj-YsmWjM/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/ytc/AIdro_mPFVsxROj1dOtTWc9iNBwDYV4z42Q8LPokBSewiW9pCSg=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Bro code</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                                                        <div class="card youtube-card border-0 bg-transparent">
+                                                            <div class="position-relative">
+                                                                <img src="https://img.youtube.com/vi/phWxA89Dy94/maxresdefault.jpg" loading="lazy" class="card-img-top rounded-3"
+                                                                    alt="Video thumbnail">
+                                                                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1"
+                                                                    style="font-size: 0.8rem;">50:45</span>
+                                                            </div>
+                                                            <div class="card-body p-2 d-flex">
+                                                                <div class="flex-shrink-0 me-2">
+                                                                    <img src="https://yt3.ggpht.com/AbpSwJHbvF8A5o1Urc2jFs-aI8R9UwI22-iVHHBt3rCMTBPbEEVeOQtZHNFiG5lt9WdOKN6W=s48-c-k-c0x00ffffff-no-rj"
+                                                                        class="rounded-circle" width="36" height="36" alt="Channel icon">
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="card-title text-white mb-1"
+                                                                        style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                                        How To Make Netflix Website Clone Using HTML And CSS</h6>
+                                                                    <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">GreatStack</p>
+                                                                    <p class="card-text text-secondary" style="font-size: 0.8rem;">411K views · 2 hours ago
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                </div>
+
+                            </main>
+
+        </section>
+            
+    
+    
+    
+            
+            
+            
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
